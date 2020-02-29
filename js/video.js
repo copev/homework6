@@ -37,6 +37,7 @@ function skipAhead() {
 	// 	video.currentTime += 60
 
 	if (video.currentTime < video.duration && video.ended==false){
+	// unsure if this is closer, because the logic of this statement might be irrelevant. If a condition is met during hte execution of this if statement, does the program stop what its doing or continue on with what it was told? Ex. this statement says add 60 if the video's current time is less than the duration, but what happens if the end is hit after adding only 40 seconds? does this continue to add the remaining 20 because it was already in progress or will it stop since it now means video.ended==true?
 		video.currentTime += 60}
 	else {
 		video.currentTime = 0
